@@ -1,0 +1,142 @@
+.sideBar {
+  z-index: 99999;
+  width: 550px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  position: relative;
+  transform: translateX(-550px);
+  transition: all 1s;
+}
+
+.sideBarTop {
+  background-color: #73c0d8;
+  color: #fff;
+  height: 12vh;
+  .title {
+    justify-content: space-around;
+    align-items: center;
+    h1 {
+      font-size: 29px;
+      line-height: 38px;
+    }
+    .getDate {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  .location {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+    select {
+      width: 45%;
+      font-size: 20px;
+      border-radius: 5%;
+      border: 0;
+    }
+  }
+}
+
+.sideBarBottom {
+  background-color: #fff;
+  overflow-y: auto;
+  height: 88vh;
+  .sideBarClick {
+    display: block;
+    width: 27px;
+    height: 75px;
+    background-color: #73c0d8;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 0px 5px 5px 0px;
+    position: absolute;
+    top: 90px;
+    right: -27px;
+    margin: 0 auto;
+    text-decoration: none;
+    i {
+      line-height: 75px;
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 10px;
+    background: #ffa573;
+  }
+  li {
+    border: 1px solid #000;
+    padding: 10px 25px;
+    border-collapse: collapse;
+    list-style-type: none;
+    h3 {
+      text-align: center;
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 15px;
+    }
+    .mask-arrow {
+      justify-content: space-between;
+    }
+    .maskNumber {
+      width: 80%;
+      justify-content: space-around;
+      text-decoration: none;
+      .mask-adult {
+        width: 140px;
+        height: 25px;
+        background-color: #73c0d8;
+        border-radius: 16px;
+        display: block;
+        color: #fff;
+        text-align: center;
+        line-height: 25px;
+        text-decoration: none;
+      }
+      .mask-child {
+        width: 140px;
+        height: 25px;
+        background-color: #ffa573;
+        border-radius: 16px;
+        display: block;
+        color: #fff;
+        text-align: center;
+        line-height: 25px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.sideBarClick {
+  .right {
+    display: block;
+  }
+  .left {
+    display: none;
+  }
+}
+
+.switch {
+  .sideBar {
+    transform: translateX(0px);
+  }
+  .sideBarClick {
+    .right {
+      display: none;
+    }
+    .left {
+      display: block;
+    }
+  }
+}
